@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Antonio";
+    src: url("../font/Antonio-Bold.ttf");
+}
+
+.imgLogo{
+    position: absolute;
+    top: 60px;
+    left: 25%;
+    width: 128px;
+    height: 128px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+} 
+section{
+    margin-left: 260px;
+    transition: 0.5s;
+    text-align: justify;
+    padding: 5px;
+    padding-top: 100px;
+}
+article.podStrona>p{
+    font-size: larger;
+}
+article.podStrona#oNas>p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.logo{
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 128px;
+} 
+header{
+    position: fixed;
+    font-family: Antonio;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    font-size: 25px;
+    /* background-color: #111; */
+}
+.navList{
+    margin-top: 120px;
+}
+.sideBar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    white-space:nowrap;
+}
+#test{
+    text-align: right;
+}
+.sideBar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+}
+
+.sideBar a:hover{
+    color: #f1f1f1;
+}
+.sideBar a.txt:hover{
+    background-color: #444;
+}
+
+.currWeb{
+    color: #f1f1f1;
+}
+
+.sideBar .closeSbBtn{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openSbBtn{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 25px;
+    box-shadow: black 1px;
+    border-radius: 15px;
+} 
+
+.openSbBtn:hover{
+    background-color: #444;
+    transition: 0.5s;
+}
+
+@media screen and (max-height:450px){
+    .sideBar{padding-top: 15px;}
+    .sideBar a{font-size: 18px;}
+} 
