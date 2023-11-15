@@ -111,19 +111,19 @@ html{
         }
         header{
             position: fixed;
+            display: flex;
             top: 0;
             width: 100%;
             z-index: 1;
             height: 6vh;
             background-color: #111;
-            box-shadow: 0 1px 2px #111;
+            box-shadow: 0 1px 2px #111;     
             >h1{
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%,0);
                 >a{
-                    width: 15%;
-                    display: block;
-                    margin: auto;
                     font-family: Antonio;
-                    text-align: center;
                     font-size: 4vh;
                     color: var(--main-txtcolor);
                     text-decoration: none;
@@ -132,6 +132,39 @@ html{
                         text-shadow: 0 0 4px#f1f1f1;
                         transition: 0.5s;
                     }
+                }
+            }
+            >.headerKoszyk{
+                
+                width: 6vh;
+                height: 6vh;
+                margin-right: 1%;
+                margin-left: auto;
+                align-self: flex-end;
+                font-size: 4vh;
+                color: var(--sidebar-txtcolor);
+                transition: 0.1s;
+                &:hover{
+                    color: var(--main-txtcolor);
+                    cursor: pointer;
+                    transition: 0.1s;
+                    text-shadow: 3px 3px 1px var(--sidebar-txtcolor);;
+                }
+            }
+            >.headerUser{
+                
+                width: 6vh;
+                height: 6vh;
+                margin-right: 2%;
+                align-self: flex-end;
+                font-size: 4vh;
+                color: var(--sidebar-txtcolor);
+                transition: 0.1s;
+                &:hover{
+                    color: var(--main-txtcolor);
+                    cursor: pointer;
+                    transition: 0.1s;
+                    text-shadow: 3px 3px 1px var(--sidebar-txtcolor);;
                 }
             }
         }
