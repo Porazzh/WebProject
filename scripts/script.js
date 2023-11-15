@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () =>{
     openBtn.addEventListener("click", () =>{
         sideBar.classList.add("openedSideBar")
         sideBar.classList.remove("closedSideBar")
-        document.querySelector("#chowac").style.marginLeft = "260px"
+        document.querySelector("#chowac").style.marginLeft = "250px"
     })
     closeBtn.addEventListener("click", () =>{
         sideBar.classList.add("closedSideBar")

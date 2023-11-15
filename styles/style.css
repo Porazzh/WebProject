@@ -23,7 +23,7 @@
   background-color: #111;
 }
 * ::-webkit-scrollbar-thumb {
-  border-radius: 2px;
+  border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #444;
 }
@@ -53,13 +53,14 @@ html body .openSbBtn:hover {
   transition: 0.5s;
 }
 html body section {
-  margin-left: 260px;
+  margin-left: 250px;
   transition: 0.5s;
   text-align: justify;
   padding: 5px;
   padding-top: 6.5vh;
 }
 html body section article.gridParrentFirst {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(5 1fr 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -71,7 +72,7 @@ html body section article.gridParrentFirst {
 }
 html body section article.gridParrentFirst div {
   border: 2px solid #111;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -95,6 +96,7 @@ html body section article.gridParrentFirst div.div6 {
   grid-area: 3/4/4/6;
 }
 html body section article.gridParrentSecond {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -104,29 +106,29 @@ html body section article.gridParrentSecond {
   min-height: 0px;
   max-height: 800px;
 }
-html body section div {
+html body section article.gridParrentSecond div {
   border: 2px solid #111;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   overflow-y: auto;
   overflow-x: hidden;
 }
-html body section div.div1 {
+html body section article.gridParrentSecond div.div1 {
   grid-area: 1/1/3/5;
 }
-html body section div.div2 {
+html body section article.gridParrentSecond div.div2 {
   grid-area: 3/1/4/5;
 }
-html body section div.div3 {
+html body section article.gridParrentSecond div.div3 {
   grid-area: 4/1/6/3;
 }
-html body section div.div4 {
+html body section article.gridParrentSecond div.div4 {
   grid-area: 4/3/6/5;
 }
-html body section div.div5 {
+html body section article.gridParrentSecond div.div5 {
   grid-area: 1/5/5/6;
 }
-html body section div.div6 {
+html body section article.gridParrentSecond div.div6 {
   grid-area: 5/5/6/6;
 }
 html body header {
@@ -149,11 +151,10 @@ html body header > h1 > a {
   font-size: 4vh;
   color: var(--main-txtcolor);
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 html body header > h1 > a:hover {
-  text-shadow: 0 0 4px #f1f1f1;
-  transition: 0.5s;
+  text-shadow: 2px 2px 2px var(--sidebar-txtcolor);
 }
 html body header > .headerKoszyk {
   width: 6vh;
@@ -163,12 +164,11 @@ html body header > .headerKoszyk {
   align-self: flex-end;
   font-size: 4vh;
   color: var(--sidebar-txtcolor);
-  transition: 0.1s;
+  transition: 0.5s;
 }
 html body header > .headerKoszyk:hover {
   color: var(--main-txtcolor);
   cursor: pointer;
-  transition: 0.1s;
   text-shadow: 3px 3px 1px var(--sidebar-txtcolor);
 }
 html body header > .headerUser {
@@ -178,12 +178,11 @@ html body header > .headerUser {
   align-self: flex-end;
   font-size: 4vh;
   color: var(--sidebar-txtcolor);
-  transition: 0.1s;
+  transition: 0.5s;
 }
 html body header > .headerUser:hover {
   color: var(--main-txtcolor);
   cursor: pointer;
-  transition: 0.1s;
   text-shadow: 3px 3px 1px var(--sidebar-txtcolor);
 }
 html body article.podStrona > p {

@@ -1,5 +1,6 @@
 
 html{
+    -webkit-transition: 0.5s;
     nav{
         &.openedSideBar{
             height: 100%;
@@ -31,14 +32,22 @@ html{
                     color: var(--sidebar-txtcolor);
                     display: block;
                     transition: 0.5s;
-                    & span#txtSpanSb{
+                    &.txt{
+                        transition: 0.5s;
+                    }   
+                    span#txtSpanSb{
                         font-size: 20px;
-                        
+                    }
+                    span.spanPusty{
+                        transition: 0.5s;
                     }
                     &.txt:hover{
                         color: var(--main-txtcolor);
                         background-color: #444;
                         text-shadow: 2px 2px 1px #000000;
+                        span.spanPusty{
+                            margin-left: 10px;
+                        }
                     }
                     &.closeSbBtn{
                         position: absolute;
