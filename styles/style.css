@@ -5,6 +5,7 @@
 :root {
   --sidebar-txtcolor: #818181;
   --main-txtcolor: #f1f1f1;
+  --border: solid #111 0.4vh ;
 }
 
 * {
@@ -28,6 +29,10 @@
   background-color: #444;
 }
 
+html body {
+  background-color: var(--main-txtcolor);
+  min-height: 100vh;
+}
 html body .openSbBtn {
   position: fixed;
   display: flex;
@@ -53,9 +58,9 @@ html body .openSbBtn:hover {
   transition: 0.5s;
 }
 html body section {
+  height: 60vh;
   margin-left: 250px;
   transition: 0.5s;
-  text-align: justify;
   padding: 5px;
   padding-top: 6.5vh;
 }
@@ -107,7 +112,7 @@ html body section article.gridParrentSecond {
   max-height: 800px;
 }
 html body section article.gridParrentSecond div {
-  border: 2px solid #111;
+  border: var(--border);
   border-radius: 5px;
   padding: 10px;
   overflow-y: auto;
@@ -130,6 +135,55 @@ html body section article.gridParrentSecond div.div5 {
 }
 html body section article.gridParrentSecond div.div6 {
   grid-area: 5/5/6/6;
+}
+html body section .logowanieForm {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  border: var(--border);
+  width: 50vw;
+  margin: auto;
+  margin-top: 20vh;
+  border-radius: 10px;
+  background-color: white;
+  height: 40vh;
+}
+html body section .logowanieForm div.loginDataDiv {
+  margin: auto;
+  width: 80%;
+  line-height: 4vh;
+}
+html body section .logowanieForm div.loginDataDiv span {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 2.5vh;
+}
+html body section .logowanieForm div.loginDataDiv input {
+  width: 100%;
+  height: 5vh;
+  font-size: 2.5vh;
+  padding: 10px;
+}
+html body section .logowanieForm div.buttonsDiv {
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+html body section .logowanieForm div.buttonsDiv button {
+  background-color: #111;
+  color: var(--main-txtcolor);
+  font-size: large;
+  font-family: Antonio;
+  width: 45%;
+  height: 6vh;
+  font-size: 3vh;
+}
+html body section .logowanieForm div.buttonsDiv button:hover {
+  background-color: #222;
+}
+html body section .logowanieForm div.buttonsDiv button.signInBtn {
+  margin-left: auto;
 }
 html body header {
   position: fixed;
@@ -157,6 +211,7 @@ html body header > h1 > a:hover {
   text-shadow: 2px 2px 2px var(--sidebar-txtcolor);
 }
 html body header > .headerKoszyk {
+  text-decoration: none;
   width: 6vh;
   height: 6vh;
   margin-right: 1%;
@@ -172,6 +227,7 @@ html body header > .headerKoszyk:hover {
   text-shadow: 3px 3px 1px var(--sidebar-txtcolor);
 }
 html body header > .headerUser {
+  text-decoration: none;
   width: 6vh;
   height: 6vh;
   margin-right: 2%;
