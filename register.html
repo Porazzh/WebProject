@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="./styles/fontello.css">
     <link rel="stylesheet" href="./styles/sideBarStyle.css">
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/login.js"></script>
+    <script src="./scripts/register.js"></script>
 </head>
 <body>
     <a href="javascript:void(0)" id="openSbBtn" class="openSbBtn" >&#9776</a>
@@ -36,15 +37,40 @@
     </header>
     <main>
         <section id="chowac">
-            <form action="#" class="logowanieForm" id="logowanieForm">
-                <div class="loginDataDiv">
-                    <span>Twój login lub e-mail: </span><input type="text" id="userLogin">
-                    <span>Twoje hasło: </span><input type="password" id="userPassword">
+            <form action="#" class="rejestracjaForm" id="rejestracjaForm">
+                <div class="registerData">
+                    <div class="dataDiv">
+                        <span>Login: </span>
+                        <input type="text" id="userLoginRegister">
+                    </div>
+                    <div class="dataDiv">
+                        <span>E-mail: </span>
+                        <input type="text" id="userEmailRegister">
+                    </div>
+                    <div class="dataDiv">
+                        <span>Hasło: </span>
+                        <input type="password" id="userPasswordRegister">
+                    </div>
+                    <div class="dataDiv">
+                        <span>Numer telefonu: </span>
+                        <input type="text" id="userPhonenbrRegister">
+                    </div>
+                </div>
+                <div class="checkboxDiv">
+                    <div>
+                        <input type="checkbox" id="pedalstwo" name="tosAccept"/>
+                        <label for="pedalstwo">Oświadczam że jestem gejem i zapoznałem się z <a href=""> regulaminem.</a>  </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="przetwarzanie" name="rodoAccept"/>
+                        <label for="przetwarzanie">Zgadzam się na sprzedanie moich danych do kim dzong una i marka zuckleberga</label>
+                    </div>
                 </div>
                 <div class="buttonsDiv">
-                    <button type="submit" class="logInBtn">ZALOGUJ SIĘ</button>
-                    <a href="./register.html"><button type="button" class="signInBtn">ZAREJESTRUJ SIĘ</button></a>
-                    
+                    <button type="submit" class="signInBtn">Załóż konto</button>
+                </div>
+                <div class="haveAcc">
+                    <span>Masz już konto? <a href="./login.html">Zaloguj się</a></span>
                 </div>
             </form>
         </section>

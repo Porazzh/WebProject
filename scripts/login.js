@@ -1,18 +1,10 @@
-class UserAdd{
-    constructor(login,password,email,phoneNbr){
-        login: this.login;
-        password: this.password;
-        email: this.email;
-        phoneNbr: this.phoneNbr
-    }
-}
-u1 = new UserAdd("Janek","jasiek1234","jasiu@gmail.com",123456789)
+
+//login
 window.addEventListener("DOMContentLoaded", () =>{
     form = document.forms[0];
-    usrLog = document.querySelector("#userLogin").value;
-    usrPassword = document.querySelector("#userPassword").value;
     form.addEventListener("submit",(event) =>{
-        alert(usrLog)
+        usrLog = document.querySelector("#userLogin").value;
+        usrPassword = document.querySelector("#userPassword").value;
         event.preventDefault();
         if(u1.login = usrLog)
         {

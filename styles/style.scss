@@ -120,6 +120,72 @@ html{
                     &.div6 { grid-area: 5 / 5 / 6 / 6; }
                 }
             }
+            .rejestracjaForm{
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                border: var(--border);
+                width: 50vw;
+                margin:auto;
+                margin-top: 15vh;
+                margin-bottom: 15vh;
+                border-radius: 10px;
+                background-color: white;
+                .registerData{
+                    div.dataDiv{
+                        white-space:nowrap;
+                        display: flex;
+                        width: 100%;
+                        padding: 10px;
+                        span{
+                            display: block;
+                            width: 30%;
+                            line-height: 5vh;
+                            padding-right: 10px;
+                            font-size: 2vh;
+                        }
+                        input{
+                            width: 70%;
+                            height: 5vh;
+                            font-size: 2.5vh;
+                            padding: 10px;
+                        }
+                    }
+                }
+                .checkboxDiv{
+                    padding: 10px;
+                    div{
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                        label{
+                            font-size: 2vh;
+                        }
+                    }
+                }
+                .buttonsDiv{
+                    display: flex;
+                    padding: 20px;
+                    width: 100%;
+                    white-space:nowrap;
+                    button{
+                        background-color: #111;
+                        color: var(--main-txtcolor);
+                        font-size: large;
+                        font-family: Antonio;
+                        width: 50%;
+                        height: 6vh;
+                        font-size: 3vh;
+                        margin: auto;
+                        &:hover{
+                            background-color: #222;
+                        }
+                    }
+                }
+                .haveAcc{
+                    padding: 10px;
+                    font-size: 2vh;
+                }
+            }
             .logowanieForm{
                 display: flex;
                 padding: 20px;
@@ -152,6 +218,22 @@ html{
                     display: flex;
                     margin: auto;
                     width: 80%;
+                    a{
+                        background-color: #111;
+                        color: var(--main-txtcolor);
+                        font-size: large;
+                        font-family: Antonio;
+                        width: 45%;
+                        height: 6vh;
+                        font-size: 3vh;
+                        margin-left: auto;
+                        button{
+                            width: 100%;
+                        }
+                        &:hover{
+                            background-color: #222;
+                        }    
+                    }
                     button{
                         background-color: #111;
                         color: var(--main-txtcolor);
@@ -162,9 +244,6 @@ html{
                         font-size: 3vh;
                         &:hover{
                             background-color: #222;
-                        }
-                        &.signInBtn{
-                            margin-left: auto;
                         }
                     }
                 }
