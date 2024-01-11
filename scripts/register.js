@@ -1,11 +1,12 @@
 class UserAdd{
     constructor(login,password,email,phoneNbr){
-        login: this.login;
-        password: this.password;
-        email: this.email;
-        phoneNbr: this.phoneNbr
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.phoneNbr = phoneNbr;
     }
 }
+
 let users = [];
 
 window.addEventListener("DOMContentLoaded", () =>{
@@ -32,6 +33,6 @@ window.addEventListener("DOMContentLoaded", () =>{
         if(canCreate){
             alert("Konto o nazwie: "+ login +" zostało utworzone")
             users.push(new UserAdd(login,password,email,phoneNbr));
-        }
+        }  
     })
 })
